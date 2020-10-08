@@ -1,6 +1,6 @@
 const express = require("express");
 const exphbs = require("express-handlebars");
-const mysql = require("mysql");
+const connection = require("./config/connection");
 
 const app = express();
 
@@ -19,5 +19,8 @@ app.listen(PORT, () => {
 })
 
 app.get("/", (req, res) => {
+    connection.query("SELECT * FROM buerger", (err, data) => {
+        console.table(data);
+    });
     res.render("index");
 });
