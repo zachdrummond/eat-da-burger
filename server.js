@@ -19,8 +19,8 @@ app.listen(PORT, () => {
 })
 
 app.get("/", (req, res) => {
-    connection.query("SELECT * FROM buerger", (err, data) => {
-        console.table(data);
+    connection.query("SELECT * FROM burgers", (err, data) => {
+        console.log(data);
+        res.render("index", { data: data});
     });
-    res.render("index");
 });
