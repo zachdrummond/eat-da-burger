@@ -40,8 +40,10 @@ This is a simple restaurant app that enables users to create fictional burgers a
 
 ## Credits
 * https://nodejs.org/en/
-* https://www.npmjs.com/package/inquirer
-* https://dev.mysql.com/
-* https://www.npmjs.com/package/console.table
+* https://www.npmjs.com/
+* https://www.npmjs.com/package/nodemon
 * https://www.npmjs.com/package/mysql
 * https://www.mysql.com/
+* http://expressjs.com/
+* https://jquery.com/
+* https://www.heroku.com/
