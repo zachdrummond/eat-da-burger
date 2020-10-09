@@ -1,3 +1,4 @@
+// Dependencies
 const connection = require("../config/connection.js");
 
 // Creates an Object Relational Mapper
