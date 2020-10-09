@@ -1,11 +1,15 @@
+// Dependencies
 const mysql = require("mysql");
 
 let connection;
 
+
+// Connects to the JAWS Database
 if(process.env.JAWSDB_URL){
     connection = mysql.createConnection(process.env.JAWSDB_URL);
 } else{
-    console.log("Local Connection");
+    
+    // Connects to the Local Database
     connection = mysql.createConnection({
         host: "localhost",
         user: "root",
@@ -15,6 +19,7 @@ if(process.env.JAWSDB_URL){
     })
 }
 
+// Connects to the Database
 connection.connect(function(error) {
     
     if(error){
