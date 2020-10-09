@@ -1,5 +1,6 @@
 const orm = require("../config/orm");
 
+// Creates a Burger Model
 const burger = {
     all: function(callback) {
         orm.selectALL("burgers", function(result){
