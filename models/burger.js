@@ -1,7 +1,16 @@
 const orm = require("../config/orm");
 
 const burger = {
-    // Create the code that will call the ORM functions using burger specific input for the ORM.
+    all: function(callback) {
+        orm.selectALL("burgers", function(result){
+            callback(result);
+        });
+    },
+    create: function(value, callback){
+        orm.insertOne("burgers", "burger_name", value, function(result){
+            callback(result);
+        });
+    }
 };
 
 module.exports = burger;

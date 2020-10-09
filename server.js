@@ -1,7 +1,6 @@
 // Dependencies
 const express = require("express");
 const exphbs = require("express-handlebars");
-const connection = require("./config/connection");
 const routes = require("./controllers/burgers_controllers.js");
 
 const app = express();
@@ -14,9 +13,9 @@ app.listen(PORT, () => {
 })
 
 // MIDDLEWARE
-app.use(express.urlencoded( { extended: true } ) );
+app.use(express.static("public")); // Serve Static Content
+app.use(express.urlencoded( { extended: true } ) ); // Parse JSON
 app.use(express.json());
-app.use(express.static("public"));
 app.engine("handlebars", exphbs( { defaultLayout: "main" } ) );
 app.set("view engine", "handlebars");
 app.use(routes);
