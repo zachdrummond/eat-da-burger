@@ -14,3 +14,5 @@ INSERT INTO burgers (burger_name)
 VALUES ("The Elvis"), ("Krabby Patty"), ("The Good Burger");
 
 SELECT * FROM burgers;
+
+UPDATE burgers SET devoured = "true" WHERE id = 1;
