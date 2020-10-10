@@ -4,11 +4,11 @@
 
     <img src="https://ih1.redbubble.net/image.894871460.7630/st,small,845x845-pad,1000x1000,f8f8f8.jpg" alt="Winky Burger Image"/>
 
-    <div class="container pt-5">
+    <div class="container mt-4">
         <div class="row">
             <div class="col-sm-6">
-                <h1>Burgers To Eat</h1>
-                <ul>
+                <h2>Burgers To Eat</h2>
+                <ul class="p-0">
                     {{#each burgers}}
                     {{#unless devoured}} {{!-- If not devoured --}}
                     {{>burger-block devoured=false}}
@@ -17,8 +17,8 @@
                 </ul>
             </div>
             <div class="col-sm-6">
-                <h1>Devoured Burgers</h1>
-                <ul>
+                <h2>Devoured Burgers</h2>
+                <ul class="p-0">
                     {{#each burgers}}
                     {{#if devoured}}
                     {{>burger-block devoured=true}}
@@ -29,14 +29,15 @@
         </div>
     </div>
 
-    <h1>Add a Burger!</h1>
+    <hr>
 
-    <form class="create">
+    <h3>Add a Burger!</h3>
+
+    <form class="create form-inline justify-content-center">
         <div class="form-group">
-            <label for="newBurger">Burger Name:</label>
-            <input type="text" id="newBurger" name="name">
+            <input type="text" id="newBurger" name="name" placeholder="Burger Name" class="ml-2">
         </div>
-        <button type="submit" class="btn btn-primary btn-sm">Add a Burger</button>
+        <button type="submit" class="btn btn-primary btn-sm ml-2">Add a Burger</button>
     </form>
 
 </main>
