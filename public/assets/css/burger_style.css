@@ -1,5 +1,11 @@
 body {
-    background-color: red;
-    color: white;
     font-family: arial;
+}
+
+img {
+    width: 200px;
+}
+
+h1 {
+    margin-bottom: 20px;
 }
