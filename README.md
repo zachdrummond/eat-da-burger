@@ -16,27 +16,51 @@ This is a simple restaurant app that enables users to create fictional burgers a
 
 ## Design Elements
 ### *JavaScript - Node.js*
-* Node Command-Line User Interface
-* Node Package Manager - Inquirer, MySQL, Console.Table
+* Node Package Manager - Express, Express-Handlebars, MySQL
+* Model View Controller Architecture
+* Object Relational Mapper
+* Routing
+* Middleware Functions
+* View Engine Template
+* Server-Side Rendering
+* JSON
+* Modules
 * Promises
+* DOM Manipulation
+* AJAX
+* Event Listeners
 * Objects
-* Arrays
 * Methods
 * Functions
-* Switch...case Statements
-* PORT
-* Template Literals
+* PORTs & Environment Variables
+* If...else statements
 * Comments
 
 ### *MySQL*
 * Database
 * Tables
 * Columns and Rows
-* Joins
-* Constraints
+
+### *Handlebars*
+* Partials
+* Triple Stash
+* Double Stash
+* Built-in Helpers
+* Comments
+
+### *Bootstrap*
+* Grid System
+* Buttons
+* Alignment
+* Colors
+
+### *CSS*
+* Font
+* Width
 
 ## App Preview
-![CLI](./assets/images/employee-tracker.png)
+![1](./public/assets/img/Eat-da-Burger1.png)
+![2](./public/assets/img/Eat-da-Burger2.png)
 
 ## Credits
 * https://nodejs.org/en/
@@ -45,5 +69,6 @@ This is a simple restaurant app that enables users to create fictional burgers a
 * https://www.npmjs.com/package/mysql
 * https://www.mysql.com/
 * http://expressjs.com/
+* https://getbootstrap.com/
 * https://jquery.com/
 * https://www.heroku.com/
